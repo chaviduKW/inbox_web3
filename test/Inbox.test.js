@@ -42,7 +42,7 @@ beforeEach(async ()=>{
         
     inbox = await new web3.eth.Contract(JSON.parse(interface))
         .deploy({data:bytecode, arguments:[INITIAL_STRING]})
-        .send({from:accounts[0],gas:'1000000'})
+        .send({from:accounts[0],gas:'10000000'})
 })
 
 describe('Inbox',()=>{
